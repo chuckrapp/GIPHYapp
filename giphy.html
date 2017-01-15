@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fun with GIPHY!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="text-center">
+    <div id="jumboDiv" class="jumbotron">
+      <div class="container">
+        <h1>Welcome to GIPHY Fun!</h1>
+        <p>Click on the button terms to show 10 random GIPHYS for the selected category. GIF's will load as still images, click the GIF to animate, and again to pause it! Add your own category using the field below!</p>
+        <button id="jumboBtn" class="btn btn-primary btn-lg">Got it!</button>
+      </div>
+    </div>
+    <div id="miniDiv" class="jumbotron hidden">
+      <div class="container">
+        <h2>Welcome to GIPHY Fun!</h2>
+        <button id="miniBtn" class="btn btn-primary">Show Instructions</button>
+      </div>
+    </div>
+	<div class="container">
+		<div class="row">
+			<div id="formDiv" class="col-md-12">
+				<form class="form-inline">
+					<div class="form-group">
+						<label class="sr-only">Search Term Input</label>
+						<p class="form-control-static">Enter New Category:</p>
+					</div>
+					<div class="form-group md-sm-3">
+						<label for="newTerm" class="sr-only">Search Term</label>
+						<input type="text" class="form-control" id="newTerm" placeholder="Search">
+					</div>
+					<button id="newTermButton" class="btn btn-primary">Add to List</button>
+					<button id="clearButton" class="btn btn-primary">Clear Gif's</button>
+				</form>
+			</div>
+		</div>
+		<div class="row">
+			<div class='col-xs-12 button-wrapper'>
+				<div id="buttonSpot" class="col-md-12"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="gifSpot" class="col-md-12"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
